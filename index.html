@@ -52,7 +52,7 @@
     </div>
 
     <div class="resources">
-      <label class="energy">Energy:<span class="value">{{zm.model.energy|decimal}} / {{zm.model.energyMax|whole}}</span><span class="percent" ng-style="{'width':zm.energyPercent() + '%'}"></span></label>
+      <label class="energy">Energy:<span class="value">{{zm.model.energy}} / {{zm.model.energyMax|whole}}</span><span class="percent" ng-style="{'width':zm.energyPercent() + '%'}"></span></label>
       <label class="blood">Blood:<span class="value">{{zm.model.persistentData.blood|whole}} / {{zm.model.bloodMax|whole}}</span><span class="percent" ng-style="{'width':zm.bloodPercent() + '%'}"></span></label>
       <label class="brains">Brains:<span class="value">{{zm.model.persistentData.brains|whole}} / {{zm.model.brainsMax|whole}}</span><span class="percent" ng-style="{'width':zm.brainsPercent() + '%'}"></span></label>
       <label class="bones" ng-if="zm.model.constructions.graveyard || zm.model.persistentData.bones > 0">Bones:<span class="value">{{zm.model.persistentData.bones|whole}}</span></label>
